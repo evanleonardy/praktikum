@@ -13,7 +13,7 @@
   </head>
   <body>
       @include('includes.navbar')
-      <div class="container">
+      <div class="container-fluid">
           <div class="row">
               <div class="col-md-12">
                   <table id="table_siswa" class="display">
@@ -22,6 +22,7 @@
                               <th scope="col">No</th>
                               <th scope="col">Nama</th>
                               <th scope="col">Lahir</th>
+                              <th scope="col">Hoby</th>
                               <th scope="col">Gender</th>
                               <th scope="col">Agama</th>
                               <th scope="col">Alamat</th>
@@ -36,6 +37,7 @@
                             <td>{{$siswa->id}}</td>
                             <td>{{$siswa->nama}}</td>
                             <td>{{$siswa->lahir}}</td>
+                            <td>{{$siswa->hobi}}</td>
                             <td>{{$siswa->jk}}</td>
                             <td>{{$siswa->agama}}</td>
                             <td>{{$siswa->alamat}}</td>
@@ -52,7 +54,7 @@
                       </tbody>
                   </table>
               </div>
-              <button type="button" class="btn btn-primary">Tambah Siswa</button>
+              <a href="/tambah_siswa"><button type="button" class="btn btn-primary">Tambah Siswa</button></a>
           </div>
       </div>
 
